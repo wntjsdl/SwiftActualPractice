@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import YPImagePicker
 
 class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     var subject: String!
@@ -48,15 +49,24 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     /// 카메라 버튼 클릭했을 때 호출되는 메서드
     @IBAction func pick(_ sender: Any) {
         // 이미지 피커 인스턴스 생성한다.
-        let picker = UIImagePickerController()
-        
-        picker.delegate = self
-        picker.allowsEditing = true
-        
-        // 이미지 피커 화면을 표시한다.
-        self.present(picker, animated: true)
+        let picker = YPImagePicker()
+        picker.didFinishPicking { [unowned picker] items, _ in
+            if let photo = items.singlePhoto {
+                print(photo.fromCamera) // Image source (camera or library)
+                print(photo.image) // Final image selected by the user
+                print(photo.originalImage) // original image selected by the user, unfiltered
+                print(photo.modifiedImage) // Transformed image, can be nil
+                print(photo.exifMeta) // Print exif meta data of original image.
+                
+                // 선택된 이미지를 미리보기에 출력한다.
+                self.preview.image = photo.image as? UIImage
+            }
+            picker.dismiss(animated: true, completion: nil)
+        }
+        present(picker, animated: true, completion: nil)
     }
     
+    /*
     /// 사용자가 이미지를 선택하면 자동으로 이 메소드가 호출된다.
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         // 선택된 이미지를 미리보기에 출력한다.
@@ -65,6 +75,7 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         // 이미지 피커 컨트롤러를 닫는다.
         picker.dismiss(animated: false)
     }
+    */
     
     /// 사용자가 텍스트 뷰에 뭔가를 입력하면 자동으로 이 메소드가 호출된다.
     func textViewDidChange(_ textView: UITextView) {

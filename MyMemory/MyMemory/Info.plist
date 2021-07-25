@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NSMicrophoneUsageDescription</key>
-	<string></string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string></string>
+	<string>마이크 접근 권한을 허용하시겠습니까?</string>
+	<key>NSCameraUsageDescription</key>
+	<string>카메라 사용 권한을 허용하시겠습니까?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>라이브러리 접근 권한을 허용하시겠습니까?</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -15,7 +17,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>페이퍼-잇</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>

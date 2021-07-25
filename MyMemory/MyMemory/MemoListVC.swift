@@ -40,20 +40,20 @@ class MemoListVC: UITableViewController {
         let cellId = row.image == nil ? "memoCell" : "memoCellWithImage"
         
         // 3. 재사용 큐로부터 프로토타입 셀의 인스턴스를 전달받는다.
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! MemoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as? MemoCell
         
         // 4. memoCell의 내용을 구성한다.
-        cell.subject?.text = row.title
-        cell.contents?.text = row.contents
-        cell.img?.image = row.image
+        cell?.subject?.text = row.title
+        cell?.contents?.text = row.contents
+        cell?.img?.image = row.image
         
         // 5. Date 타입의 날짜를 yyyy-MM-dd HH:mm:ss 포맷에 맞게 변경한다.
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        cell.regdate?.text = formatter.string(from: row.regdate!)
+        cell?.regdate?.text = formatter.string(from: row.regdate!)
         
         // 6. cell 객체를 리턴한다.
-        return cell
+        return cell!
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
