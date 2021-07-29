@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         // 자동갱신 레이블을 생성하고 루트 뷰에 추가한다.
         let lblUpdate = UILabel()
-        lblUpdate.frame = CGRect(x: 30, y: 150, width: 100, height: 30)
+        lblUpdate.frame = CGRect(x: lblEmail.frame.origin.x, y: 150, width: 100, height: 30)
         lblUpdate.text = "자동갱신"
         lblUpdate.font = UIFont.systemFont(ofSize: 14)
         
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         
         // 갱신주기 레이블을 생성하고 루트 뷰에 추가한다.
         let lblInterval = UILabel()
-        lblInterval.frame = CGRect(x: 30, y: 200, width: 100, height: 30)
+        lblInterval.frame = CGRect(x: lblEmail.frame.origin.x, y: 200, width: 100, height: 30)
         lblInterval.text = "갱신주기"
         lblInterval.font = UIFont.systemFont(ofSize: 14)
         
@@ -98,6 +98,20 @@ class ViewController: UIViewController {
         // 스위치와 스테퍼 컨트롤의 Value Changed 이벤트를 각각 액션 메소드에 연결한다.
         self.paramUpdate.addTarget(self, action: #selector(presentUpdateValue(_:)), for: .valueChanged)
         self.paramInterval.addTarget(self, action: #selector(presentIntervalValue(_:)), for: .valueChanged)
+        
+        // 전송 버튼을 내비게이션 아이템에 추가하고, submit 메소드에 연결한다.
+        let submitBtn = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(submit(_:)))
+        self.navigationItem.rightBarButtonItem = submitBtn
+        
+        /*
+        for family in UIFont.familyNames {
+            print("\(family)")
+            
+            for names in UIFont.fontNames(forFamilyName: family) {
+                print("== \(names)")
+            }
+        }
+        */
     }
     
     // 스위치와 상호반응할 액션 메소드
@@ -109,7 +123,16 @@ class ViewController: UIViewController {
     @objc func presentIntervalValue(_ sender: UIStepper) {
         self.txtInterval.text = ("\( Int(sender.value) )분마다")
     }
-
+    
+    // 전송 버튼과 상호반응할 메소드
+    @objc func submit(_ sender: Any) {
+        let rvc = ReadViewController()
+        rvc.pEmail = self.paramEmail.text
+        rvc.pUpdate = self.paramUpdate.isOn
+        rvc.pInterval = self.paramInterval.value
+        
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
 
 }
 
