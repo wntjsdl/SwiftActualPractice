@@ -14,6 +14,12 @@
 		6317628C26BDF5A400256CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6317628B26BDF5A400256CCC /* Assets.xcassets */; };
 		6317628F26BDF5A400256CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6317628D26BDF5A400256CCC /* LaunchScreen.storyboard */; };
 		6317629726BDF9F200256CCC /* MapAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6317629626BDF9F200256CCC /* MapAlertViewController.swift */; };
+		637B849226C00CBC009D0B17 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B849126C00CBC009D0B17 /* MapKitViewController.swift */; };
+		637B849626C012FD009D0B17 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 637B849426C012FC009D0B17 /* note.png */; };
+		637B849726C012FD009D0B17 /* rating5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 637B849526C012FD009D0B17 /* rating5@2x.png */; };
+		637B849926C0131B009D0B17 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B849826C0131B009D0B17 /* ImageViewController.swift */; };
+		637B849B26C0224B009D0B17 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B849A26C0224B009D0B17 /* ControlViewController.swift */; };
+		637B849D26C02624009D0B17 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B849C26C02624009D0B17 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		6317628E26BDF5A400256CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6317629026BDF5A400256CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6317629626BDF9F200256CCC /* MapAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAlertViewController.swift; sourceTree = "<group>"; };
+		637B849126C00CBC009D0B17 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		637B849426C012FC009D0B17 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		637B849526C012FD009D0B17 /* rating5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating5@2x.png"; sourceTree = "<group>"; };
+		637B849826C0131B009D0B17 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		637B849A26C0224B009D0B17 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		637B849C26C02624009D0B17 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		6317628126BDF5A100256CCC /* Chapter03-Alert */ = {
 			isa = PBXGroup;
 			children = (
+				637B849326C012E0009D0B17 /* Resources */,
 				6317628226BDF5A100256CCC /* AppDelegate.swift */,
 				6317628426BDF5A100256CCC /* SceneDelegate.swift */,
 				6317628626BDF5A100256CCC /* ViewController.swift */,
@@ -66,8 +79,21 @@
 				6317628D26BDF5A400256CCC /* LaunchScreen.storyboard */,
 				6317629026BDF5A400256CCC /* Info.plist */,
 				6317629626BDF9F200256CCC /* MapAlertViewController.swift */,
+				637B849126C00CBC009D0B17 /* MapKitViewController.swift */,
+				637B849826C0131B009D0B17 /* ImageViewController.swift */,
+				637B849A26C0224B009D0B17 /* ControlViewController.swift */,
+				637B849C26C02624009D0B17 /* ListViewController.swift */,
 			);
 			path = "Chapter03-Alert";
+			sourceTree = "<group>";
+		};
+		637B849326C012E0009D0B17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				637B849426C012FC009D0B17 /* note.png */,
+				637B849526C012FD009D0B17 /* rating5@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +153,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637B849726C012FD009D0B17 /* rating5@2x.png in Resources */,
 				6317628F26BDF5A400256CCC /* LaunchScreen.storyboard in Resources */,
+				637B849626C012FD009D0B17 /* note.png in Resources */,
 				6317628C26BDF5A400256CCC /* Assets.xcassets in Resources */,
 				6317628A26BDF5A100256CCC /* Main.storyboard in Resources */,
 			);
@@ -141,9 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6317629726BDF9F200256CCC /* MapAlertViewController.swift in Sources */,
+				637B849226C00CBC009D0B17 /* MapKitViewController.swift in Sources */,
 				6317628726BDF5A100256CCC /* ViewController.swift in Sources */,
 				6317628326BDF5A100256CCC /* AppDelegate.swift in Sources */,
+				637B849926C0131B009D0B17 /* ImageViewController.swift in Sources */,
 				6317628526BDF5A100256CCC /* SceneDelegate.swift in Sources */,
+				637B849D26C02624009D0B17 /* ListViewController.swift in Sources */,
+				637B849B26C0224B009D0B17 /* ControlViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
