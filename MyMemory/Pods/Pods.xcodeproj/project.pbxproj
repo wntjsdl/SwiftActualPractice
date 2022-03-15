@@ -815,8 +815,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -902,8 +902,8 @@
 				A5B26A072A11C77D1E1F192D48F0F3ED /* AVAssetTimeSelector.swift in Sources */,
 				50179CF985B612EBB434FD81CEC40A61 /* CropMaskView.swift in Sources */,
 				FFE932E598214DF877E6FABD056DB05B /* HandlerView.swift in Sources */,
-				E6F4D1AA87BE2E09EFB06D3A7DB61858 /* PryntTrimmerView-dummy.m in Sources */,
 				4D70E0DFADECA12B73EF259508B320C8 /* PryntTrimmerView.swift in Sources */,
+				E6F4D1AA87BE2E09EFB06D3A7DB61858 /* PryntTrimmerView-dummy.m in Sources */,
 				AF5DBFB7B1BF0562079B205EECDDB954 /* ThumbSelectorView.swift in Sources */,
 				1107AAC65A672293BF399FB449A1671D /* VideoCropView.swift in Sources */,
 				4B50C410D94F23BE9AD81AC066BDE8F3 /* VideoScrollView.swift in Sources */,
@@ -971,15 +971,15 @@
 				F62357ED6AFC8CC4B0FD41FA6B35152E /* YPGridView.swift in Sources */,
 				625AEAFD5C820931C9A277C6D6CDCD32 /* YPHelper.swift in Sources */,
 				1F4E290436E91A6E2576CB7EEE665072 /* YPIcons.swift in Sources */,
-				F64B76F252981E85B952425DEC7FEB0D /* YPImagePicker-dummy.m in Sources */,
 				8F5023982B3FB84E0E392D21C43D65B4 /* YPImagePicker.swift in Sources */,
+				F64B76F252981E85B952425DEC7FEB0D /* YPImagePicker-dummy.m in Sources */,
 				9DC70801A9D85A40C8B0048BE2FF593F /* YPImagePickerConfiguration.swift in Sources */,
 				22083528A118560FCEBEB352D22D463A /* YPImageSize.swift in Sources */,
 				83E459A00FDE45D47741B5C7362908FD /* YPLibrary+LibraryChange.swift in Sources */,
 				A8D25FF94C8EA15D8FA4BF2929A41C7D /* YPLibrarySelection.swift in Sources */,
+				9FC61BD9C7545A4600AF280A21F208C8 /* YPLibraryVC.swift in Sources */,
 				5C136E99665E29B3F12A76DEB00495A7 /* YPLibraryVC+CollectionView.swift in Sources */,
 				906A3C98B398C9A9D9D2536795C62F12 /* YPLibraryVC+PanGesture.swift in Sources */,
-				9FC61BD9C7545A4600AF280A21F208C8 /* YPLibraryVC.swift in Sources */,
 				A5C98F0D1F0E2A446DC6C03A9034CABD /* YPLibraryView.swift in Sources */,
 				44E35B3737E9D71D18521175A9C48C64 /* YPLibraryViewCell.swift in Sources */,
 				47CE11DE10C9BE79D6841758567B5D5F /* YPLibraryViewDelegate.swift in Sources */,

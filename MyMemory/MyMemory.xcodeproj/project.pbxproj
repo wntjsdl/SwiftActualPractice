@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E9189F126F314FC00C6F247 /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E9189F026F314FC00C6F247 /* memo-background@2x.png */; };
 		637BE97926A485E800A6F628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BE97826A485E800A6F628 /* AppDelegate.swift */; };
 		637BE97B26A485E800A6F628 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637BE97A26A485E800A6F628 /* SceneDelegate.swift */; };
 		637BE98026A485E800A6F628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637BE97E26A485E800A6F628 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		2C0573C7BE355E8D567E9669 /* Pods-MyMemory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMemory.release.xcconfig"; path = "Target Support Files/Pods-MyMemory/Pods-MyMemory.release.xcconfig"; sourceTree = "<group>"; };
+		3E9189F026F314FC00C6F247 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
 		637BE97526A485E800A6F628 /* MyMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		637BE97826A485E800A6F628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		637BE97A26A485E800A6F628 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +60,15 @@
 				8FFC6412091972003EC6F3F7 /* Pods-MyMemory.debug.xcconfig */,
 				2C0573C7BE355E8D567E9669 /* Pods-MyMemory.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3E9189EC26F3133500C6F247 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3E9189F026F314FC00C6F247 /* memo-background@2x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		49B2D25C5A9AFE71170B4F80 /* Frameworks */ = {
@@ -91,6 +100,7 @@
 		637BE97726A485E800A6F628 /* MyMemory */ = {
 			isa = PBXGroup;
 			children = (
+				3E9189EC26F3133500C6F247 /* Resource */,
 				637BE97826A485E800A6F628 /* AppDelegate.swift */,
 				637BE97A26A485E800A6F628 /* SceneDelegate.swift */,
 				637BE97E26A485E800A6F628 /* Main.storyboard */,
@@ -166,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9189F126F314FC00C6F247 /* memo-background@2x.png in Resources */,
 				637BE98826A485EA00A6F628 /* LaunchScreen.storyboard in Resources */,
 				637BE98526A485EA00A6F628 /* Assets.xcassets in Resources */,
 				637BE98026A485E800A6F628 /* Main.storyboard in Resources */,

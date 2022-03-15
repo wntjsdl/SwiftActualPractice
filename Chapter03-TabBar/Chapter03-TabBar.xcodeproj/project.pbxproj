@@ -32,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EE7A5262706E5EB00D8ECC0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6333A70226B2F8B5006F5B83 /* Chapter03-TabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter03-TabBar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6333A70526B2F8B5006F5B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6333A70726B2F8B5006F5B83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 				6333A71D26B30477006F5B83 /* Resources */,
 				6333A70526B2F8B5006F5B83 /* AppDelegate.swift */,
 				6333A70726B2F8B5006F5B83 /* SceneDelegate.swift */,
+				3EE7A5262706E5EB00D8ECC0 /* MyPlayground.playground */,
 				6333A70926B2F8B5006F5B83 /* ViewController.swift */,
 				6333A70B26B2F8B5006F5B83 /* Main.storyboard */,
 				6333A70E26B2F8B6006F5B83 /* Assets.xcassets */,
@@ -361,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F28X63GKN;
 				INFOPLIST_FILE = "Chapter03-TabBar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F28X63GKN;
 				INFOPLIST_FILE = "Chapter03-TabBar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
