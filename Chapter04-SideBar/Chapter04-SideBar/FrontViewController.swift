@@ -17,6 +17,9 @@ class FrontViewController: UIViewController {
         if let revealVC = self.revealViewController() {
             self.sideBarButton.target = revealVC
             self.sideBarButton.action = #selector(revealVC.revealToggle(_:))
+            
+            // 제스처를 뷰에 추가한다.
+            self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
         }
     }
 }

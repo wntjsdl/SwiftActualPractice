@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E334A8027E01E1000C86A66 /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E334A7F27E01E1000C86A66 /* sidemenu.png */; };
 		63E66D0C27DF8ED50059260F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E66D0B27DF8ED50059260F /* AppDelegate.swift */; };
 		63E66D0E27DF8ED50059260F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E66D0D27DF8ED50059260F /* SceneDelegate.swift */; };
 		63E66D1027DF8ED50059260F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E66D0F27DF8ED50059260F /* ViewController.swift */; };
@@ -14,11 +15,11 @@
 		63E66D1527DF8ED70059260F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E66D1427DF8ED70059260F /* Assets.xcassets */; };
 		63E66D1827DF8ED70059260F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E66D1627DF8ED70059260F /* LaunchScreen.storyboard */; };
 		63E66D2227DF8F300059260F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E66D2027DF8F2F0059260F /* SWRevealViewController.m */; };
-		63E66D2B27DF92C40059260F /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E66D2A27DF92C40059260F /* sidemenu.png */; };
 		63E66D2D27DF935E0059260F /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E66D2C27DF935E0059260F /* FrontViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E334A7F27E01E1000C86A66 /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sidemenu.png; path = Resources/sidemenu.png; sourceTree = SOURCE_ROOT; };
 		63E66D0827DF8ED50059260F /* Chapter04-SideBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter04-SideBar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E66D0B27DF8ED50059260F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E66D0D27DF8ED50059260F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		63E66D1F27DF8F2F0059260F /* Chapter04-SideBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chapter04-SideBar-Bridging-Header.h"; sourceTree = "<group>"; };
 		63E66D2027DF8F2F0059260F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		63E66D2127DF8F2F0059260F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		63E66D2A27DF92C40059260F /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidemenu.png; sourceTree = "<group>"; };
 		63E66D2C27DF935E0059260F /* FrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,10 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E334A8227E01E2200C86A66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E334A7F27E01E1000C86A66 /* sidemenu.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		63E66CFF27DF8ED50059260F = {
 			isa = PBXGroup;
 			children = (
-				63E66D2327DF92250059260F /* Resources */,
+				3E334A8227E01E2200C86A66 /* Resources */,
 				63E66D0A27DF8ED50059260F /* Chapter04-SideBar */,
 				63E66D0927DF8ED50059260F /* Products */,
 			);
@@ -80,14 +88,6 @@
 			path = "Chapter04-SideBar";
 			sourceTree = "<group>";
 		};
-		63E66D2327DF92250059260F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				63E66D2A27DF92C40059260F /* sidemenu.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,7 +114,6 @@
 		63E66D0027DF8ED50059260F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
@@ -125,7 +124,7 @@
 				};
 			};
 			buildConfigurationList = 63E66D0327DF8ED50059260F /* Build configuration list for PBXProject "Chapter04-SideBar" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -148,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E66D1827DF8ED70059260F /* LaunchScreen.storyboard in Resources */,
-				63E66D2B27DF92C40059260F /* sidemenu.png in Resources */,
+				3E334A8027E01E1000C86A66 /* sidemenu.png in Resources */,
 				63E66D1527DF8ED70059260F /* Assets.xcassets in Resources */,
 				63E66D1327DF8ED50059260F /* Main.storyboard in Resources */,
 			);
